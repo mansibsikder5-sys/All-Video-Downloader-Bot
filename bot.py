@@ -107,7 +107,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         with open(filename, 'rb') as video_file:
             await update.message.reply_video(
                 video=video_file, 
-                caption="🎉 আপনার কাঙ্ক্ষিত ভিডিওটি রেডি! উপভোগ করুন। 🔥\n\n🤖 Powered by Render"
+                caption="🎉 আপনার কাঙ্ক্ষিত ভিডিওটি রেডি! উপভোগ করুন। 🔥\n\n🤖 Developer by MANSIB"
             )
 
         if os.path.exists(filename):
