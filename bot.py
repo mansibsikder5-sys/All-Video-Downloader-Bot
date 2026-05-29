@@ -155,3 +155,14 @@ def main():
 
 if __name__ == "__main__":
     main()
+# কোডের উপরের দিকে লাইব্রেরি ইম্পোর্টের জায়গায় এই লাইনটি নিশ্চিত করুন:
+import yt_dlp
+
+# handle_message ফাংশনের ভেতর ydl_opts অংশটি এভাবে আপডেট করুন:
+    ydl_opts = {
+        'format': 'best', # সব প্ল্যাটফর্মের জন্য বেস্ট ফরম্যাট সিলেক্ট করবে
+        'outtmpl': 'downloaded_video.%(ext)s',
+        'quiet': True,
+        'no_warnings': True,
+        'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
+    }
