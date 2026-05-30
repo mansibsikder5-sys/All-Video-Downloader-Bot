@@ -118,7 +118,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         print(f"Error: {str(e)}")
         await status_message.edit_text(
             "❌ দুঃখিত! ভিডিওটি ডাউনলোড করা সম্ভব হয়নি।\n\n"
-            "💡 **সম্ভাব্য কারণ:**\n"
+            " **সম্ভাব্য কারণ:**\n"
             "১. লিঙ্কটি ভুল অথবা ভিডিওটি প্রাইভেট/ডিলিট করা হয়েছে। \n"
             "২. ভিডিওর ফাইল সাইজ ৫০ মেগাবাইটের বেশি। 🛑"
         )
